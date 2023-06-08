@@ -1,0 +1,69 @@
+/* Recent Stories */
+.continueBox {
+  margin-top: 1rem;
+}
+.storyBox h1 {
+  font-weight: 500;
+  color: var(--black);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.storyCards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.5rem;
+}
+.storyCard {
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+.storyCard:hover {
+  transform: scale(0.95);
+  transition: all 0.3s;
+}
+.storyCard a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.storyCard img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+@media only screen and (max-width: 1024px) {
+  .storyCards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .storyCards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  .storyBox h1 {
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 536px) {
+  .storyCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .storyBox h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--black);
+    line-height: 3;
+    color: var(--dark);
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .storyCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

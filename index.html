@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StoryVista | Read short stories | Yash Kumar Saini</title>
+    <link rel="stylesheet" href="styles/initials.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+    <!-- Google Material Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <i>SV</i>
+        </div>
+        <div class="nav-items">
+          <a href="/" class="list-item active-nav">
+            <span class="material-symbols-rounded"> home </span>
+            <span class="list-content">Home</span>
+          </a>
+
+          <a href="stories/" class="list-item">
+            <span class="material-symbols-rounded"> auto_stories </span>
+            <span class="list-content">Stories</span>
+          </a>
+          <div class="list-item">
+            <span class="material-symbols-rounded"> book </span>
+            <span class="list-content">Story</span>
+          </div>
+          <a href="../bookmarks/" class="list-item">
+            <span class="material-symbols-rounded"> bookmark </span>
+            <span class="list-content">Bookmarks</span>
+          </a>
+          <a href="/settings/" class="list-item">
+            <span class="material-symbols-rounded"> settings </span>
+            <span class="list-content">Settings</span>
+          </a>
+        </div>
+        <div class="menu">
+          <div><span class="material-symbols-rounded"> menu </span></div>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="topBar">
+          <div class="searchBar">
+            <span class="material-symbols-rounded"> search </span>
+            <input type="text" placeholder="Search story, author..." />
+          </div>
+          <div class="infoBox">
+            <span class="material-symbols-rounded"> person </span>
+          </div>
+        </div>
+        <div class="storyBox">
+          <h1>Freshly Released Tales</h1>
+          <div class="storyCards" id="recent_stories">
+            <!-- Latest 4 Stories appear here... -->
+          </div>
+        </div>
+        <div class="storyBox continueBox">
+          <h1>Continue Reading</h1>
+          <div class="storyCards" id="continue_stories">
+            <!-- Incompleted stories appear here... -->
+            <div class="storyCard">
+              <a href="../stories/"
+                ><img src="images/story_covers/story_continue.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="storyBox continueBox">
+          <h1>Completed Stories</h1>
+          <div class="storyCards" id="completed_stories">
+            <!-- Completed stories appear here... -->
+            <div class="storyCard">
+              <a href="../stories/"
+                ><img src="images/story_covers/complete_story.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="smallNav">
+        <a href="/" class="sm-item saved">
+          <span class="material-symbols-rounded"> home </span>
+        </a>
+        <a href="/stories/" class="sm-item">
+          <span class="material-symbols-rounded"> auto_stories </span>
+        </a>
+        <div class="sm-item">
+          <span class="material-symbols-rounded"> book </span>
+        </div>
+        <a href="/bookmarks/" class="sm-item">
+          <span class="material-symbols-rounded"> bookmark </span>
+        </a>
+        <a href="/settings/" class="sm-item">
+          <span class="material-symbols-rounded"> settings </span>
+        </a>
+      </div>
+    </div>
+    <script type="text/javascript" src="stories.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Version 08.06.2023.09.57 -->
+  </body>
+</html>

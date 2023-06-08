@@ -1,0 +1,71 @@
+.settingsBox {
+  width: 100%;
+  padding: 2rem 0;
+}
+.themeCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.themeCard {
+  border: 1px solid var(--line);
+  position: relative;
+  border-radius: 1rem;
+  padding: 0;
+  margin: 0;
+}
+.themeCard:hover {
+  cursor: pointer;
+}
+.themeCard img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.themeFoot {
+  margin: 0;
+  width: 100%;
+  border-top: 1px solid var(--line);
+  padding: 1rem;
+  color: var(--dark);
+  font-weight: 500;
+  background-color: var(--white);
+  border-radius: 0 0 1rem 1rem;
+}
+.tickBox {
+  position: absolute;
+  top: -20px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.activeCard .tickBox {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  .themeCards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .themeCard {
+    border-radius: 0.5rem;
+  }
+  .themeCard img {
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .themeFoot {
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
+@media only screen and (max-width: 536px) {
+  .themeCards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
